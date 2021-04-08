@@ -29,7 +29,10 @@ ORM::configure("logging", true);
 */
 
 Route::get('/', function () {
-    return view('layout');
+    $welcome = '<div class="jumbotron">
+                    <h1>Bienvenido a la app de Empleados, por favor seleccione opción desde el menú</h1>
+                </div>';
+    return view('layout', ['welcome'=>$welcome]);
 });
 
 Route::get('/empleados', function() {

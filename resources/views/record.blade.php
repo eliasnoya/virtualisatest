@@ -5,7 +5,7 @@
     </div>
     
     <div class="col-md-3 text-right">
-        <button type="button" class="btn btn-danger" onclick="route('/')">
+        <button type="button" class="btn btn-danger"  onclick="main();">
             <i class="bi bi-x"></i> Salir
         </button>
     </div>
