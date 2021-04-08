@@ -35,7 +35,7 @@
             <td>{{$e->provincia}}</td>
             <td>{{$e->direccion}}</td>
             <td>{{$e->desc_tipo_documento}}</td>
-            <td>{{$e->nro_documento}}</td>
+            <td>{{$e->nrodocumento}}</td>
             <td>{{$e->codigopostal}}</td>
             <td>{{$e->provincia}}</td>
         </tr>
