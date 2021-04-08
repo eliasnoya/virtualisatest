@@ -34,14 +34,9 @@ Route::get('/', function () {
 
 Route::get('/empleados', function() {
 
-    var_dump(ORM::for_table('empleados_detalle')->find_many());
-    $html = '';
-    foreach (ORM::for_table('empleados_detalle')->find_many() as $e) {
-        $html .= $e->apellido . '<br/>';
-    }
-    var_dump($html);
-    return $html;
-    // return 'Empleados';
+    $empleados = ORM::for_table('empleados_detalle')->find_many();
+    return view('list', ['empleados'=>$empleados]);
+    
 });
 
 Route::get('/empleados/alta', function() {

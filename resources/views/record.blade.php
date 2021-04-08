@@ -1,6 +1,15 @@
 
-
-<h3>Alta de empleado</h3>
+<div class="row mb-3">
+    <div class="col-md-9">
+        <h3>Alta de empleado</h3>
+    </div>
+    
+    <div class="col-md-3 text-right">
+        <button type="button" class="btn btn-danger" onclick="route('/')">
+            <i class="bi bi-x"></i> Salir
+        </button>
+    </div>
+</div>
 
 <div class="alert alert-info alert-dismissible fade show" role="alert" style="display:none;" id="ajxResContainer">
   <strong id="ajxRes"></strong>
